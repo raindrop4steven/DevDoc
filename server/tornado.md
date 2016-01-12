@@ -2,9 +2,9 @@
 
 #### 配置结构
 
-1. /etc/nginx/conf.d/tornado.conf
+1. /etc/nginx/sites-available/tornado.conf, **MUST** copy to **sites-enabled**, **ln -s** doesn't work. 
 
-		upstream tornadoes {server 127.0.0.1:5001;}
+		# upstream tornadoes {server 127.0.0.1:5001;}
 		server {
 			listen 80;
 			server_name hello.com;
@@ -15,7 +15,7 @@
 				proxy_redirect off;
 				proxy_set_header X-Real-IP $remote_addr;
 				proxy_set_header X-Scheme $scheme;
-				proxy_pass http://tornadoes;
+				proxy_pass http://127.0.0.1:5001;
 			}
 		}
 
@@ -171,3 +171,6 @@
 		autostart=false
 		autorestart=false
 		user=steven
+
+### 相关链接
+[网站服务器压力Web性能测试:Apache Bench,Webbench,http_load安装使用](http://www.freehao123.com/apache-bench-webbench/)
