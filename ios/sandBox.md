@@ -21,9 +21,11 @@
 输完单击Enter键，退出终端，重新启动Finder就可以了
 重启Finder：鼠标单击窗口左上角的苹果标志-->强制退出-->Finder-->
 现在能看到资源库文件夹了。
-![](img/sand2.png)
+
+	![](img/sand2.png)
+
 打开资源库后找到/Application Support/iPhone Simulator/文件夹。这里面就是模拟器的各个程序的沙盒目录了。
-![](img/sand3.png)
+	![](img/sand3.png)
 
 2. 方法2、这种方法更方便，在Finder上点->前往->前往文件夹，输入/Users/username/Library/Application Support/iPhone Simulator/  前往。
 username这里写你的用户名。
