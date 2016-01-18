@@ -49,3 +49,19 @@
 	3. Local Music Name
 		1. Category-mid.mp3
 		
+
+### Login and Register
+1. Register:
+	1. User input email and password
+	2. Input username
+	3. Store username in NSUserdefaults, then create Documents/user_id/Music directory.
+	4. Copy resource music to Documents/user_id/Music and store in coredata, dictionary:{@"132343":True}.
+
+2. Login:
+	1. Input email and password, then get response from server(username and other).
+	2. Save username, user_id, token in NSUserdefaults.
+	3. Check if dictionary[user_id], (fresh install, False, logout still keep as True), copy on False, skip on YES, update resourceCopyed=True.
+
+
+3. logout
+	1. Remove token, username, user_id in UserDefaults.
