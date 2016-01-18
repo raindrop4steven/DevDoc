@@ -65,3 +65,14 @@
 
 3. logout
 	1. Remove token, username, user_id in UserDefaults.
+
+4. NSUserdefaults
+	ResourceCopied
+           user_id1        True
+           user_id2        True
+
+### Chat整合
+
+### UI细化
+
+### 代码精简，修复Bug
