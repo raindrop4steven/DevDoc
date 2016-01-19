@@ -45,3 +45,22 @@ Then, provided you have a property for the other view controller, you can call s
 	}
 	
 	return nil;
+
+### Query All data from CoreData
+
+	NSManagedObjectContext *context = //Get it from AppDelegate
+	
+	NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"MUSTHAFA"];
+	
+	NSError *error = nil;
+	
+	NSArray *results = [context executeFetchRequest:request error:&error];
+	
+	if (error != nil) {
+	
+	   //Deal with failure
+	}
+	else {
+	
+	   //Deal with success
+	}
