@@ -45,9 +45,8 @@
 			// :)
 		}
 		
-
-
-
-
-
 #### 4. [core-location-manager-changes-in-ios-8](http://nevan.net/2014/09/core-location-manager-changes-in-ios-8/)
+
+#### 5. Question
+1. Global data to store user's location?
+2. Pop up when user tap to publish.
