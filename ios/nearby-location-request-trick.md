@@ -6,11 +6,11 @@
 2. After selecting motions
 
 
-#### 3. [Check location authorization status](http://stackoverflow.com/questions/7221004/detecting-whether-location-services-are-enabled-for-my-app)
+#### 2. [Check location authorization status](http://stackoverflow.com/questions/7221004/detecting-whether-location-services-are-enabled-for-my-app)
 
 	[CLLocationManager authorizationStatus] != kCLAuthorizationStatusDenied
 
-#### 2. 逼死处女座的地理位置请求,类似片刻的动态页面里的设置
+#### 3. 逼死处女座的地理位置请求,类似片刻的动态页面里的设置
 
 1. When first logged in, show an instruction page in **NearBy** as hint: Permit for location for nearby voices.
 2. Implementation NearViewController:
@@ -50,6 +50,4 @@
 
 
 
-#### 3. [Check location authorization status](http://stackoverflow.com/questions/7221004/detecting-whether-location-services-are-enabled-for-my-app)
-
-	[CLLocationManager authorizationStatus] != kCLAuthorizationStatusDenied
+#### 4. [core-location-manager-changes-in-ios-8](http://nevan.net/2014/09/core-location-manager-changes-in-ios-8/)
