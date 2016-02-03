@@ -11,5 +11,47 @@
 
 
 ### Problem to solve
-1. Detail scroll
-2. UI
+1. Detail scroll, see misc on github
+2. [iRate](https://github.com/nicklockwood/iRate)
+3. UI
+
+4. AVAudioPlayer
+
+		NSInteger currentSoundsIndex; //Don't forget to set this in viewDidLoad or elsewhere
+		
+		//In viewDidLoad add this line
+		{
+		...
+		currentSoundsIndex = 0;
+		...
+		}
+		
+		-(void) playCurrentSong
+		{
+		NSError *error;
+		mediaPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:[soundList objectAtIndex:currentSoundsIndex] ofType:nil]] error:&error];
+		if(error !=nil)
+		{
+		   NSLog(@"%@",error);
+		   //Also possibly increment sound index and move on to next song
+		}
+		else
+		{
+		self.lblCurrentSongName.text = [soundList objectAtIndex:currentSoundsIndex];
+		[mediaPlayer setDelegate:self];
+		[mediaPlayer prepareToPlay]; //This is not always needed, but good to include
+		[mediaPlayer play];
+		}
+		
+		}
+		
+		//This is the delegate method called after the sound finished playing, there are also other methods be sure to implement them for avoiding possible errors
+		- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+		{
+		//Increment index but don't go out of bounds
+		currentSoundsIndex = ++currentSoundsIndex % [soundList count];
+		[self playCurrentSong];
+		}
+
+5. [【初心者でも簡単】facebookのPopでiOSアニメーションやってみた](http://tech.voyagegroup.com/archives/7679085.html)
+6. [Facebook POP 进阶指南](http://www.cocoachina.com/industry/20140704/9034.html)
