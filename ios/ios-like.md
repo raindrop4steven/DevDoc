@@ -55,3 +55,6 @@
 # Thoughts
 
 1. Add tags on photos.
+
+
+https://github.com/xhzengAIB/PinterestAnimator
