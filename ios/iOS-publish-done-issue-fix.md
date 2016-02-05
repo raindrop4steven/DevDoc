@@ -29,3 +29,14 @@ When pop up motion choice and after publish success, it returned to login.
 
 1. Profile's login page: like DuiTang's
 2. Before publish + : like PianKe's
+
+#### 6. Music download
+
+1. When download success, push notification to localMusicViewController, it then reload data.
+
+
+#### 7. Picture
+1. When click show menu : Camera/Photo/preLoaded images.
+
+
+#### POP
