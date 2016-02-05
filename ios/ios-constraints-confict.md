@@ -1,0 +1,4 @@
+将一个NavigationController里的View加入到另一个NavigationController中时，需要被加入的要设置NavigationBarTop 这个LayoutGuide约束。不能直接一个大Controller，会出现约束冲突。
+
+
+hot->Detail
