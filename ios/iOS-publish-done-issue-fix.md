@@ -40,3 +40,8 @@ When pop up motion choice and after publish success, it returned to login.
 
 
 #### POP
+
+-----------------------------------------------------------------------------------------
+
+TODO:
+- 表情缩减到3个，效果和片刻一样，选择后立即跳转并隐藏，不在后续的之中。
