@@ -1,6 +1,6 @@
 ## Flask Sqlalchemy Left Join
 
-### Common solution
+### 1. Common Join
 	-- statement --
 	db.session.query(Voice, Favor.voice_id).outerjoin(Favor).all()
 
@@ -9,7 +9,7 @@
 
 
 
-### Join subquery
+### 2. Join subquery
 
 1. First select from Favor and get all the subquery filter by (user_id = g.user.id)
 2. Join
@@ -21,3 +21,10 @@
 
 		-- result --
 		[(<application.models.voice.Voice object at 0x7f529c11f190>, None), (<application.models.voice.Voice object at 0x7f529c11f210>, 1), (<application.models.voice.Voice object at 0x7f529c11f3d0>, 2)]
+
+
+### 3. Import orders
+
+	from manager import *
+	from application.models import *
+	from application.models.user import *
