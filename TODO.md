@@ -4,6 +4,8 @@
 - [N] Classcification of voice, like 9 diary and [fm](http://fm.xinli001.com/99388908)
     - Emotions: 开心, 悲伤，愤怒
     - 场景：睡前，旅行，失恋，一个人
+- [N] Stretch Header View
+    - [Stretch Header View](http://blog.matthewcheok.com/design-teardown-stretchy-headers/)
 
 ### Done
 - [Y] Query nickname and avatar in hot and near, easy for chat userinfo.[done]
@@ -24,3 +26,4 @@
 
 ### Templates
 - [mini site](http://minimalexhibit.com/)
+
