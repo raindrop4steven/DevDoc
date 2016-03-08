@@ -13,22 +13,8 @@
 
 	![custmize](img/customize.png)
 	
-	|------------------|
-	|------------------|
-	|                  |
-	|	xxxxxxxxxx     |
-	|       x          |
-	|		x		   |
-	|   xxxxxxxxxx     |
-	|				   |
-	|------------------|
-	| song name     +  |
-	|------------------|
-	| comment          |
-	|				   |
-	|                  |
-	|------------------|
-
+4. [Smileys](https://creativemarket.com/Valendji/29314-Set-of-Smileys)
+    ![](img/sime.jpg)
 
 ### links
 

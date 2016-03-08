@@ -16,3 +16,7 @@
 	2. After upgrade succeed, you insert data with it then you could add nullable=False
 	
 			avator = db.Column(db.String(32), nullable=False)
+			
+4. alembic util command error can't find identifier
+
+        DROP TABLE alembic_version;
