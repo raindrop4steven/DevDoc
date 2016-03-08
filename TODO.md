@@ -24,6 +24,9 @@
             return [emailTest evaluateWithObject:checkString];  
         }
 
+### Links
+- [Sticky header](https://github.com/jamztang/CSStickyHeaderFlowLayout)
 ### Templates
 - [mini site](http://minimalexhibit.com/)
+
 
