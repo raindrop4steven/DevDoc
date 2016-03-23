@@ -2,17 +2,16 @@
 
 1. [PageMenu](https://github.com/HighBay/PageMenu)
 1. [Tip View](https://github.com/teodorpatras/EasyTipView)
-1. [IGLDropDownMenu](https://github.com/bestwnh/IGLDropDownMenu)
 1. [Blog ios big source](http://cnbin.github.io/blog/2015/09/16/ios-zi-liao-da-quan/)
 1. [Objective Zip](https://github.com/gianlucabertani/Objective-Zip)
 2. [Drop Notifications](https://github.com/terryworona/TWMessageBarManager)
-2. [美拍架构](http://h2ex.com/713)
-3. [文字效果](https://github.com/lexrus/LTMorphingLabel)
-4. [Detail design](https://soyep.com/)
-
-## FFMPEG
-http://askubuntu.com/questions/35457/converting-aac-to-mp3-via-command-line
-
+4. [done] [Detail design](https://soyep.com/) 
+5. [雷达刷新](https://www.behance.net/gallery/35042409/Vispo-Social-Network)
+6. [instalgram profile & snapshot](http://www.vinfotech.com/solutions/social-network-design)
+7. [nearby](https://www.behance.net/gallery/33511487/TREND-Free-UI-KIT)
+8. [well, foody and nice looking](https://www.behance.net/gallery/34101486/Riverr-App-Concept)
+## Link
+1. [美拍架构](http://h2ex.com/713)
 ## SwipeView last item bug fix
 
 1. Remove last tailView and then added it back
