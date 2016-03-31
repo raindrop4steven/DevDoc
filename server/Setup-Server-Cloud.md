@@ -36,11 +36,18 @@ CREATE USER dbuser WITH PASSWORD 'xiaodaozong';
 CREATE DATABASE raindrop OWNER dbuser;
 GRANT ALL PRIVILEGES ON DATABASE raindrop TO dbuser;
 
+# Connect to raindrop database
+
+\c raindrop
 # Enable Postgis as super user postgres
 CREATE EXTENSION postgis;
 
 # List installed extensions
 \dx
+
+# Relogin as dbuser
+psql -U dbuser -d raindrop -h localhost -p 5432
+
 ```
 
 #### 3. Deploy Application
