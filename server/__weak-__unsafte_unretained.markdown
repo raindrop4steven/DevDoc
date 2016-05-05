@@ -1,0 +1,3 @@
+When you use `__unsafe_unretained`, then the reference remains around even after the object is deallocated. So if the view controller gets popped, then weakSelf is now pointing to a deallocated object.
+
+If you change it to `__weak` instead, then when the view controller gets deallocated, it will set weakSelf to nil, and you'll be fine. You don't even need to do a check for if weakSelf is set to anything, because calling a method on nil has no effect.
