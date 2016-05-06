@@ -1,20 +1,7 @@
-## Notification OK
-https://github.com/terryworona/TWMessageBarManager
-
-
-### Douban Audio Player
-https://github.com/douban/DOUAudioStreamer
-
-
 ### TODO
-- [N] HeaderView need datasource.
-    - 读书，旅行，爱情物语，寂寞孤单
-    - P图：书籍封面，旅行封面
-- [N] Classcification of voice, like 9 diary and [fm](http://fm.xinli001.com/99388908)
-    - Emotions: 开心, 悲伤，愤怒
-    - 场景：睡前，旅行，失恋，一个人
-- [N] Stretch Header View
-    - [Stretch Header View](http://blog.matthewcheok.com/design-teardown-stretchy-headers/)
+
+- [息提醒设置](http://www.rongcloud.cn/docs/ios.html#消息提醒设置)
+- [Login Design](https://www.behance.net/gallery/34101486/Riverr-App-Concept)
 
 ### Done
 - [Y] Query nickname and avatar in hot and near, easy for chat userinfo.[done]
@@ -32,23 +19,47 @@ https://github.com/douban/DOUAudioStreamer
             NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];  
             return [emailTest evaluateWithObject:checkString];  
         }
-
-
-
-### Server
-- Trigger after creating a user, a default album should be created.
-
-        update_task_state = DDL('''\
-        CREATE TRIGGER update_task_state UPDATE OF state ON obs
-          BEGIN
-            UPDATE task SET state = 2 WHERE (obs_id = old.id) and (new.state = 2);
-          END;''')
-        event.listen(Obs.__table__, 'after_create', update_task_state)
         
-### Features
-- [StreamingKit](https://github.com/tumtumtum/StreamingKit)
+- [Y] HeaderView need datasource.
+    - 读书，旅行，爱情物语，寂寞孤单
+    - P图：书籍封面，旅行封面
 
-### Links
-- [Sticky header](https://github.com/jamztang/CSStickyHeaderFlowLayout)
+- [Y] https://github.com/terryworona/TWMessageBarManager
+
 ### Templates
 - [mini site](http://minimalexhibit.com/)
+
+### Bug
+
+1. Remove last tailView and then added it back
+
+        //enable loading view
+         if (_loadingViewEnabled)
+         {
+             //remove loading view
+             if (([self currentPage] < [self numberOfPages] - 1) && _tailLoadingView)
+             {
+                 [_tailLoadingView removeFromSuperview];
+             }
+             
+             //add loading view
+             if ([self currentPage] == [self numberOfPages] - 1)
+             {
+                 if (_tailLoadingView.superview == nil) {
+                     
+                     if (_tailLoadingView == nil) {
+                         if (!_vertical) {
+                             _tailLoadingView = [[TailLoadingView alloc] initWithFrame:CGRectMake(_scrollView.contentSize.width, 0,  80, _scrollView.bounds.size.height)];
+                         }
+                         else{
+                             _tailLoadingView = [[TailLoadingView alloc] initWithFrame:CGRectMake(0, _scrollView.contentSize.height,  _scrollView.bounds.size.width, 60)];
+                             [_tailLoadingView setIsVertical:_vertical];
+                         }
+                         _tailLoadingView.delegate = self;
+                     }
+                     
+                     [_scrollView addSubview:_tailLoadingView];
+                     [_scrollView bringSubviewToFront:_tailLoadingView];
+                 }
+             }
+         }
