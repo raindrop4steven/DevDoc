@@ -2,6 +2,7 @@
 
 - [息提醒设置](http://www.rongcloud.cn/docs/ios.html#消息提醒设置)
 - [Login Design](https://www.behance.net/gallery/34101486/Riverr-App-Concept)
+- [黑名单](http://www.rongcloud.cn/docs/server.html)
 
 ### Done
 - [Y] Query nickname and avatar in hot and near, easy for chat userinfo.[done]
